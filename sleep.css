@@ -1,0 +1,281 @@
+   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'inria', serif, ;
+}
+
+/* Rest of your CSS styles */
+/* ... */
+    .vectors {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.vectors2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.container {
+    background: white;
+     padding: 60px;
+     border-radius: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #e4e4e47b; /* Sidebar background color */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 183px; /* Adjust the width as needed */
+  position: fixed;
+  top: 0;
+  right: 20px;
+  height: 91%;
+  overflow: auto;
+  /* Sidebar button styles */
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h1 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+  padding: 0px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 15px;
+}
+
+/* Change link color on hover */
+.sidebar ul li a:hover {
+  background-color: #ccc;
+  width: 180px; /* Adjust the width on hover */
+  border-radius: 15px;
+}
+.topbar {
+    background: #e4e4e47b;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 17px;
+    right: 0;
+    width: 76%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.topbar ul li {
+    margin-right: 10px;
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FA9E9E;
+    color: black;
+    cursor: pointer;
+}
+
+.home-icon,
+.info-icon {
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fa9e9e00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-left: auto; /* Push the logout button to the right */
+}
+
+#title{
+  margin-right: 56%;
+    color: #333;
+    font-size: 25px;
+}
+/* Content area */
+.content {
+  margin-left: 220px; /* Adjust according to the width of the sidebar */
+  padding: 20px;
+  margin-top: 60px; /* Adjust according to the height of the topbar */
+}
+.container {
+  margin-top: 78px; /* Adjust according to the height of the topbar */
+  margin-left: 0px; /* Adjust according to the width of the sidebar */
+  margin-right: 20px; /* Adjust according to the width of the topbar */
+  padding: 20px;
+  background-color: #e4e4e47b; /* Example background color */
+  position: absolute;
+  top: 6px; /* Adjust according to the height of the topbar */
+  bottom: 0;
+  right: 0;
+  left: 20px; /* Adjust according to the width of the sidebar */
+  width: calc(90% - 200px); /* Adjust the width */
+  height: calc(90% - 80px); /* Adjust the height */
+  align-content: center;
+}
+/* Style for the greeting */
+#greeting {
+  margin-right: 56%;
+    color: #333;
+    font-size: 25px;
+}
+
+.buttons{
+  padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 95%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.buttons:hover {
+    background-color: #CCE4F4; /* Change the color on hover */
+    transition: 1.0s;
+}
+.dashboard {
+    display: flex;
+    align-items: flex-start; /* Align the top edges of the containers */
+    gap: 20px; /* Spacing between containers */
+    align-items: stretch;
+    height: 80%;
+}
+
+.card {
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+}
+.heart-rate {
+    /* Adjust width and height as necessary */
+    width: 100px;
+    min-height: 200px; /* This should make the container visibly longer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moon-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    color: #86779e;
+}
+.input {
+    font-size: 13px;
+    text-align: center;
+    color: #6c757d; /* Dark grey color */
+    border: 1px solid #ced4da; /* Example border, adjust as needed */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the input box */
+    width: 100px; /* Set a fixed width, or adjust as needed */
+}
+.color-indicator div {
+    width: 40px;
+    height: 70px;  
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.indicator {
+    width: 40px;
+    height: 114px;
+    border-radius: 5px;
+}
+
+.readings {
+    /* Adjust as needed */
+    width: 700px;
+}
+
+.reading {
+    text-align: center;
+    /* Other styles as needed */
+}
+
+#saveButton {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #historyList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+  width: 100%; /* Set the width of the table to fill the container */
+  border-collapse: collapse; /* Collapse borders between cells */
+  overflow-y: auto;
+}
+
+th, td {
+  text-align: left; /* Align text to the left */
+  padding: 8px; /* Add padding inside table cells */
+  border-bottom: 1px solid #ddd; /* Add a light border between rows */
+}
+
+th {
+  background-color: #f2f2f2; /* Light grey background for headers */
+}
+.text{
+  font-size: 14px;
+  text-align: center;
+}
+.trend-entries {
+  margin: 0;
+  padding: 0;
+}
