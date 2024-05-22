@@ -1,0 +1,480 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'inria', serif, ;
+}
+
+/* ... */
+    .vectors {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust the width as needed */
+    z-index: -2;
+}
+.vectors2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%; /* Adjust the width as needed */
+    z-index: -2;
+}
+
+.container {
+    background: white;
+     padding: 60px;
+     border-radius: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     z-index: -1;
+        }
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #e4e4e47b; /* Sidebar background color */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 183px; /* Adjust the width as needed */
+  position: fixed;
+  top: 0;
+  right: 20px;
+  height: 91%;
+  overflow: auto;
+  /* Sidebar button styles */
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.sidebar h1 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+  padding: 0px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 15px;
+}
+
+/* Change link color on hover */
+.sidebar ul li a:hover {
+  background-color: #ccc;
+  width: 180px; /* Adjust the width on hover */
+  border-radius: 15px;
+}
+
+/* Top bar styles */
+.topbar {
+    background: #e4e4e47b;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 17px;
+    right: 0;
+    width: 76%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.topbar ul li {
+    margin-right: 10px;
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FA9E9E;
+    color: black;
+    cursor: pointer;
+}
+.logout {
+    margin-left: auto; /* Push the logout button to the right */
+}
+
+.home-icon,
+.info-icon {
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fa9e9e00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Content area */
+.content {
+  margin-left: 220px; /* Adjust according to the width of the sidebar */
+  padding: 20px;
+  margin-top: 60px; /* Adjust according to the height of the topbar */
+}
+.container {
+  margin-top: 78px; /* Adjust according to the height of the topbar */
+  margin-left: 0px; /* Adjust according to the width of the sidebar */
+  margin-right: 20px; /* Adjust according to the width of the topbar */
+  padding: 20px ;
+  background-color: #e4e4e47b; /* Example background color */
+  position: absolute;
+  top: 6px; /* Adjust according to the height of the topbar */
+  bottom: 0;
+  right: 0;
+  left: 20px; /* Adjust according to the width of the sidebar */
+  width: calc(90% - 200px); /* Adjust the width */
+  height: calc(90% - 80px); /* Adjust the height */
+  align-content: center;
+  
+}
+/* Style for the greeting */
+#greeting {
+  margin-right: 56%;
+    color: #333;
+    font-size: 25px;
+}
+
+.buttons{
+  padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 95%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.buttons:hover {
+    background-color: #CCE4F4; /* Change the color on hover */
+    transition: 1.0s;
+}
+
+.content {
+  margin-top: 60px; /* Adjust according to the height of the topbar */
+  padding: 20px;
+}
+
+
+.shiftschedualcontent {
+  margin-top: 20px; /* Space above the shift schedule content */
+  display: none;
+  padding: 20px;
+  
+}
+
+#departmentDropdown {
+  width: 100%; /* Make the dropdown full-width of its container */
+    padding: 8px 12px; /* Add some padding inside the dropdown */
+    margin-top: 20px; /* Add some margin at the top */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ddd ; /* White background color */
+    font-size: 16px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+ /* Hover effect for dropdown */
+ #departmentDropdown select:hover {
+    border-color: #888; /* Darken the border color on hover */
+  }
+/* Focus effect for dropdown */
+#departmentDropdown  select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #555; /* Darken the border color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add a blue glow effect */
+  }
+/* Style for the dropdown options */
+#departmentDropdown  option {
+    padding: 8px; /* Add padding to options for better spacing */
+    font-size: 16px; /* Uniform font size with the select */
+  }
+
+ 
+
+#scheduleTable {
+  width: 100%; /* Use the full width of the container */
+  margin-top: 30px;
+  border-collapse: collapse; /* Collapse borders for a clean look */
+  table-layout: fixed; /* Fixed table layout for uniform column sizes */
+  display: none; /* Hide the table initially */
+}
+#scheduleTable th,
+#scheduleTable td {
+  border: 1px solid #ddd; /* Light grey border for each cell */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Padding inside cells for space */
+  white-space: nowrap; /* Prevent text wrapping in cells */
+  min-width: 100px; 
+}
+#scheduleTable th:first-child,
+#scheduleTable td:first-child {
+  width: 20%; /* Wider column for employee names */
+}
+
+#scheduleTable th:not(:first-child),
+#scheduleTable td:not(:first-child) {
+  width: calc(80% / 6); /* Distribute the remaining width among the day columns */
+}
+#scheduleTable thead th {
+  background-color: #F3F3F3; /* Light gray background for headers */
+  color: #4A4A4A; /* Dark text for contrast */
+  font-weight: bold; /* Bold font for headers */
+  padding: 10px; /* Spacing within header cells */
+  text-align: left; /* Align text to the left */
+}
+
+#scheduleTable tbody td {
+  text-align: center; /* Centered text for body cells */
+  padding: 10px; /* Spacing within cells */
+  border-bottom: 1px solid #ddd; /* Border for each cell */
+  vertical-align: middle; /* Align content in the middle vertically */
+}
+
+#scheduleTable th {
+  background-color: #f9f9f9; /* Light grey background for header cells */
+}
+
+#scheduleTable2 {
+  width: 100%; /* Use the full width of the container */
+  margin-top: 30px;
+  border-collapse: collapse; /* Collapse borders for a clean look */
+  table-layout: fixed; /* Fixed table layout for uniform column sizes */
+  display: none; /* Hide the table initially */
+}
+#scheduleTable2 th,
+#scheduleTable2 td {
+  border: 1px solid #ddd; /* Light grey border for each cell */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Padding inside cells for space */
+  white-space: nowrap; /* Prevent text wrapping in cells */
+  min-width: 110px; 
+}
+#scheduleTable2 th:first-child,
+#scheduleTable2 td:first-child {
+  width: 20%; /* Wider column for employee names */
+}
+
+#scheduleTable2 th:not(:first-child),
+#scheduleTable2 td:not(:first-child) {
+  width: calc(80% / 6); /* Distribute the remaining width among the day columns */
+}
+#scheduleTable2 thead th {
+  background-color: #F3F3F3; /* Light gray background for headers */
+  color: #4A4A4A; /* Dark text for contrast */
+  font-weight: bold; /* Bold font for headers */
+  padding: 10px; /* Spacing within header cells */
+  text-align: left; /* Align text to the left */
+}
+
+#scheduleTable2 tbody td {
+  text-align: center; /* Centered text for body cells */
+  padding: 10px; /* Spacing within cells */
+  border-bottom: 1px solid #ddd; /* Border for each cell */
+  vertical-align: middle; /* Align content in the middle vertically */
+}
+
+#scheduleTable2 th {
+  background-color: #f9f9f9; /* Light grey background for header cells */
+}
+
+
+
+
+
+/* Style for individual cell status. Add additional classes as necessary. */
+.workDay {
+  background-color: #b2caa9; /* Light green background */
+}
+
+.halfDay {
+  background-color: #feffba; /* Light yellow background */
+}
+
+.dayOff {
+  background-color: #ffb8b0; /* Light red background */
+}
+
+.sickDay {
+  background-color: #e1c8fd; /* Light purple background */
+}
+
+#scheduleTable tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+#scheduleTable tr:hover {
+  background-color: #eaeaea; /* Hover effect for table rows */
+}
+
+.color-indicators {
+    display: flex;
+    justify-content: space-around; /* Adjust as necessary */
+    margin-bottom: 20px; /* Space below the indicators */
+    margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 20px; /* Width of the color box */
+    height: 20px; /* Height of the color box */
+    display: inline-block;
+    margin-right: 5px; /* Space between the box and the text */
+}
+
+.work-day { background-color: #b2caa9; } /* Color for work */
+.half-day { background-color: #feffba; } /* Color for half day */
+.day-off { background-color: #ffb8b0; } /* Color for day off */
+.sick-day { background-color: #e1c8fd; } /* Color for sick day */
+
+
+.submitButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #80baf8;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #2d93ff;
+}
+.submitButton2 {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #80baf8;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton2:hover {
+  background-color: #2d93ff;
+}
+
+
+.services-content {
+  padding: 20px;
+  margin-top: 20px; /* Adjust as needed */
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* General Style for Service Item */
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3cfcf; /* Light grey background */
+  padding: 10px 20px;
+  margin: 8px 0;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* subtle inset shadow */
+  font-size: 16px; /* Adjust size as needed */
+}
+
+/* Styling for the toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Reduced width */
+  height: 24px; /* Reduced height */
+}
+
+/* Hide default HTML checkbox */
+.switch .toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #afadad;
+  transition: .4s;
+  border-radius: 24px; /* Half of the reduced height to make it round */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* Reduced size for the circle */
+  width: 20px;  /* Reduced size for the circle */
+  left: 2px;
+  bottom: 2px; /* Adjust bottom position to center the circle */
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Color of the slider when the toggle is checked */
+.toggle-input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Position of the slider circle when checked */
+.toggle-input:checked + .slider:before {
+  transform: translateX(26px); /* Adjust the X-axis translation to fit the new width */
+}
+
+/* Focus styles for the slider */
+.toggle-input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.save-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #80baf8;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.save-button:hover {
+  background-color: #2d93ff;
+}
