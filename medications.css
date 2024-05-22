@@ -1,0 +1,397 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'inria', serif, ;
+}
+
+/* Rest of your CSS styles */
+/* ... */
+.vectors {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.vectors2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #e4e4e47b; /* Sidebar background color */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 183px; /* Adjust the width as needed */
+  position: fixed;
+  top: 0;
+  right: 20px;
+  height: 91%;
+  overflow: auto;
+  /* Sidebar button styles */
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h1 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+  padding: 0px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 15px;
+}
+
+/* Change link color on hover */
+.sidebar ul li a:hover {
+  background-color: #ccc;
+  width: 180px; /* Adjust the width on hover */
+  border-radius: 15px;
+}
+.topbar {
+    background: #e4e4e47b;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 17px;
+    right: 0;
+    width: 76%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.topbar ul li {
+    margin-right: 10px;
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FA9E9E;
+    color: black;
+    cursor: pointer;
+}
+
+.home-icon,
+.info-icon {
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fa9e9e00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-left: auto; /* Push the logout button to the right */
+}
+/* General Styles for Tables */
+table#medicationsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table#medicationsTable th, 
+table#medicationsTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table#medicationsTable th {
+  background-color: #f9f9f9;
+}
+
+table#medicationsTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+background-color: #f1f1f1; /* Light grey background on row hover for interactivity */
+}
+
+/* Styling for Action Buttons in Table Cells */
+table button {
+background-color: #CCE4F4; /* A fresh green color for action buttons */
+color: white; /* White text for high contrast */
+padding: 6px 12px;
+border: none;
+border-radius: 4px; /* Rounded corners for the buttons */
+cursor: pointer; /* Pointer cursor on hover */
+transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+table button:hover {
+background-color: #CCE4F7; /* Darker shade of green on hover */
+}
+
+/* Responsive Table Adjustments */
+@media screen and (max-width: 768px) {
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+
+thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td {
+    /* Behave like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%; /* Make space for content to be more readable */
+    text-align: right;
+}
+
+td:before {
+    /* Now like a table header */
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%; /* Allocate width for header labels */
+    padding-right: 10px; /* Right padding for spacing */
+    white-space: nowrap; /* Ensure the header text does not wrap */
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Label the data */
+td:nth-of-type(1):before { content: "Name"; }
+td:nth-of-type(2):before { content: "Dose"; }
+td:nth-of-type(3):before { content: "Action"; }
+}
+
+#greeting {
+  margin-right: 56%;
+    color: #333;
+    font-size: 25px;
+}
+.buttons{
+  padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 95%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.buttons:hover {
+    background-color: #CCE4F4; /* Change the color on hover */
+    transition: 1.0s;
+}
+ 
+.container {
+  background: white;
+   padding: 60px;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+.container {
+  display: flex; /* Use flexbox to layout children */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Align children vertically */
+  flex-wrap: wrap; /* Allow items to wrap as needed */
+  margin-top: 78px; /* Adjust according to the height of the topbar */
+  margin-left: 0px; /* Adjust according to the width of the sidebar */
+  margin-right: 20px; /* Adjust according to the width of the topbar */
+  padding: 20px;
+  background-color: #e4e4e47b; /* Example background color */
+  position: absolute;
+  top: 6px; /* Adjust according to the height of the topbar */
+  bottom: 0;
+  right: 0;
+  left: 20px; /* Adjust according to the width of the sidebar */
+  width: calc(90% - 200px); /* Adjust the width */
+  height: calc(90% - 80px); /* Adjust the height */
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack children vertically on small screens */
+  }
+}
+
+/* Specific Container Styles */
+.UpcomingMedications-container, .AddNewMedication-container, .Prescriptions-container {
+  background: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: px; /* Fixed width */
+  min-height: 400px;
+  margin: 20px; /* Spacing between containers */
+  position: relative;
+  flex: 0 0 auto; /* Do not grow, do not shrink, and do not change the basis */
+}
+.new-medication-dot {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Form Styles */
+#medicationForm input[type="text"],
+#medicationForm input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#medicationForm button {
+  padding: 10px 20px;
+  background-color: #FA9E9E;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: calc(50% - 5px);
+  margin-right: 5px;
+}
+
+#medicationForm button:hover {
+  background-color: #CCE4F4;
+}
+
+/* Dropdown Styles */
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.dropdown select:hover {
+  border-color: #999;
+}
+
+.dropdown select:focus {
+  border-color: #ddd;
+  box-shadow: 0 0 3px #ddd;
+}
+
+#addMedicationButton {
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove the outline */
+  margin-top: 2px; /* Additional space above the button */
+  margin-bottom: 10px;
+  display: inline-block; /* Allows setting margin and other spacing properties */
+  text-align: center;
+  min-width: 150px; /* Minimum width */
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FA9E9E;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 95%;
+  height: 15%;
+  border-radius: 15px;
+  margin-left: 2%;
+
+}
+
+#addMedicationButton:hover {
+  background-color: #CCE4F4; /* Darker shade of button color for hover state */
+}
+/* Additional styles for form elements */
+#medicationForm input[type=text],
+#medicationForm input[type=time] {
+display: block;
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ddd; /* Light gray border */
+border-radius: 5px;
+width: 90%; 
+}
+
+#medicationForm button {
+padding: 5px ;
+width: 30%;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-left: 25px;
+margin-right: 5px;
+transition: background-color 0.3s ease;
+}
+.scrollable-table {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Optional: add border for better visual */
+}
+
+.scrollable-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scrollable-table th, .scrollable-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.scrollable-table th {
+  background-color: #f2f2f2;
+}
+
+
