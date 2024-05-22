@@ -1,0 +1,422 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'inria', serif, ;
+}
+
+/* Rest of your CSS styles */
+/* ... */
+    .vectors {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.vectors2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.container {
+    background: white;
+     padding: 60px;
+     border-radius: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #e4e4e47b; /* Sidebar background color */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 183px; /* Adjust the width as needed */
+  position: fixed;
+  top: 0;
+  right: 20px;
+  height: 91%;
+  overflow: auto;
+  /* Sidebar button styles */
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h1 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+  padding: 0px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 15px;
+}
+
+/* Change link color on hover */
+.sidebar ul li a:hover {
+  background-color: #ccc;
+  width: 180px; /* Adjust the width on hover */
+  border-radius: 15px;
+}
+.topbar {
+    background: #e4e4e47b;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 17px;
+    right: 0;
+    width: 76%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.topbar ul li {
+    margin-right: 10px;
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FA9E9E;
+    color: black;
+    cursor: pointer;
+}
+
+.home-icon,
+.info-icon {
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fa9e9e00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-left: auto; /* Push the logout button to the right */
+}
+
+/* Content area */
+.content {
+  margin-left: 220px; /* Adjust according to the width of the sidebar */
+  padding: 20px;
+  margin-top: 60px; /* Adjust according to the height of the topbar */
+}
+.container {
+  margin-top: 78px; /* Adjust according to the height of the topbar */
+  margin-left: 0px; /* Adjust according to the width of the sidebar */
+  margin-right: 20px; /* Adjust according to the width of the topbar */
+  padding: 20px;
+  background-color: #e4e4e47b; /* Example background color */
+  position: absolute;
+  top: 6px; /* Adjust according to the height of the topbar */
+  bottom: 0;
+  right: 0;
+  left: 20px; /* Adjust according to the width of the sidebar */
+  width: calc(90% - 200px); /* Adjust the width */
+  height: calc(90% - 80px); /* Adjust the height */
+  align-content: center;
+}
+/* Style for the greeting */
+#greeting {
+  margin-right: 56%;
+    color: #333;
+    font-size: 25px;
+}
+
+.buttons{
+  padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 95%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.buttons:hover {
+    background-color: #CCE4F4; /* Change the color on hover */
+    transition: 1.0s;
+}
+
+/*blood pressure*/
+
+.button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f7fa; /* Adjust the background as needed */
+        }
+        
+        .connect-button {
+            padding: 10px 25px; /* Adjust padding as needed */
+            font-size: 16px; /* Adjust font-size as needed */
+            border-radius: 20px; /* Rounded corners */
+            border: none; /* No border */
+            background: linear-gradient(to right, #ddd 0%, #eee 100%); /* Gradient effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: all 0.3s ease; /* Smooth transition for interactions */
+        }
+
+        .connect-button:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+            background: linear-gradient(to right, #ccc 0%, #ddd 100%); /* Slightly darker gradient on hover */
+        }
+
+        .connect-button:active {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Smaller shadow for click effect */
+        }
+
+        body {
+    background: #e9ecef;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    height: 28vh;
+    width: 43px;
+}
+
+.bp-container {
+            display: flex; /* This will lay out children side by side */
+            align-items: center; /* Aligns children vertically in the middle */
+            justify-content: start; /* Aligns children to the start of the container */
+            gap: 30px; /* Adds a gap between the card and the indicators */
+        }
+
+        .bp-card {
+            width: 226px; /* Slightly adjusted for better proportion */
+            height: 300px; /* Auto height for flexibility */
+            background-color: #dddddda2; /* Crisp white background */
+            border-radius: 15px; /* Softer rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow for depth */
+            margin: 20px;
+            padding-top: 20px; /* More padding for a better layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Centered text for a unified look */
+        }
+        .bp-card h2 {
+            margin: 10px 0 20px; /* Adjusted spacing for visual rhythm */
+            color: #333;
+            font-size: 22px; /* Slightly larger font size for emphasis */
+            font-weight: normal; /* Less bold for a lighter appearance */
+        }
+        .bp-card .divider {
+            width: 80%; /* Width reduced to not span the entire width */
+            height: 2px;
+            background-color: #ccc; /* Lighter color for a softer divider */
+            margin: 15px 0; /* Optimized margin for better spacing */
+        }
+        .bp-card h1 {
+            margin: 0; /* Removed margin for tighter spacing */
+            color: #555; /* Softer color for the readings */
+            font-size: 48px; /* Larger readings for focus */
+            font-weight: bold; /* Bold for importance */
+        }
+      
+        /* Styles for the blood pressure status */
+        .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;  /* Top border transparent */
+    border-bottom: 10px solid transparent;  /* Bottom border transparent */
+    border-right: 10px solid rgb(120, 118, 118);  /* Right border thick and black, points left */
+    position: absolute;
+    margin-right: 10px;  /* Add some space between the arrow and the indicators */
+    transition: top 0.3s ease;
+    left: 45%; /* Position arrow to the right of the indicators */
+    margin-left: 10px; /* Add some space between the arrow and the indicators */
+}
+
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #dddddda2;
+    padding: 10px;
+    border-radius: 20px;
+    margin: -11px;
+    height: -300px;
+}
+
+.status-indicator {
+    width: 50px; /* or whatever width you prefer */
+    padding: 35px;
+    color: #3b3a3a;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    
+  
+}
+
+
+
+.low {
+    background-color: #add8e6; /* Light blue */
+}
+
+.norm {
+    background-color: #98fb98a0; /* Pale green */
+}
+
+.high {
+    background-color: #f08080; /* Light coral */
+}
+
+        body {
+            margin: 0;
+            height: 5px;
+            display: flex;
+            flex-direction: column; /* Allows top or bottom alignment */
+            justify-content: flex-start; /* Start from the top */
+            background-color: #f5f7fa; /* Adjust the background as needed */
+        }
+
+        .button-container.top {
+            margin-top: 90px; /* Adjust as needed for top spacing */
+            align-self: center;
+        }
+
+        .button-container.bottom {
+            margin-top: 200px; /* Pushes the container to the bottom */
+            align-self: center;
+        }
+        
+       
+
+
+
+
+.trend-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc
+}
+
+.trend-row {
+    background: #cac9c9b4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.trend-row span {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.trend-entries {
+    margin: 0;
+    padding: 0;
+}
+
+.trend-row span:first-child {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .trend-row span {
+        flex-basis: 25%;
+    }
+}
+.button {
+  background-color: #ddd; /* Light grey background */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 70px 30px;
+  margin-left: 260px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Add a light shadow on hover */
+.button:hover {
+    background-color: #CCE4F4;
+    transition: 1.0s;
+ 
+}
+/* CSS */
+input[type="text"]#bloodPressure {
+  font-size: 2em; /* Adjust the font size as needed */
+  text-align: center; /* Center the text inside the input box */
+  border: 1px solid #ccc; /* Give a subtle border to the input field */
+  border-radius: 4px; /* Optional: round the corners of the input field */
+  padding: 10px; /* Add some padding inside the input field */
+  width: 150px; /* Set a fixed width; adjust as needed */
+  display: block; /* Make it a block element */
+  margin: 20px auto; /* Center the block on the page */
+}
+
+#saveButton {
+    flex: 1; /* makes buttons equal width */
+    padding: 10px 30px; /* adjusted padding for better fit */
+    margin: 5px; /* ensures space between buttons */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #d4d1d1;
+    color: black;
+    cursor: pointer;
+    outline: none;
+  }
+  #saveButtons :hover {
+    background-color: #CCE4F4;
+  }
+  
